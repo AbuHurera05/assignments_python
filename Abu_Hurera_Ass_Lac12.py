@@ -40,4 +40,23 @@
 # devloper = Developer("Abu Hurera",23,"Male",5321,"Java Developer","Java")
 # devloper.show_detail()
 
+# Qno3
+# class Animal:
+#    def __init__(self):
+#       pass
+#    def eat(self):
+#       print("Eating.....")
 
+# class Bird(Animal):
+#    def __init__(self):
+#       super().__init__()
+#    def eat(self):
+#       print("Birds are Eating........")
+#    def fly(self):
+#       print("Birds Are Flying")
+
+# bird = Bird()
+# bird.eat()
+# bird.fly()
+
+Qno4
