@@ -34,6 +34,9 @@ class Math:
             return False
          return True
 
+math = Math()
+print(math.is_prime_num(6))
+
 # Qno4
 # class Account:
 #    _balance=1000
