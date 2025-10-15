@@ -15,3 +15,29 @@
 # detail = motercycle.show_detail()
 # print(f"{detail} {motercycle.has_sidecar}")
 
+# Qno2
+# class Person:
+#    def __init__(self,name,age,gender):
+#       self.name = name
+#       self.age = age
+#       self.gender = gender
+   
+# class Employee:
+#    def __init__(self,empId,post):
+#       self.empId = empId
+#       self.post = post
+
+# class Developer(Person,Employee):
+#    def __init__(self, name, age, gender,empId,post,programming_languge):
+#       Person.__init__(self,name, age, gender)
+#       Employee.__init__(self,empId,post)
+#       self.programming_language = programming_languge
+
+#    def show_detail(self):
+#       print(f"Name: {self.name} Age: {self.age} Geder: {self.gender} ")
+#       print(f"Employee Id: {self.empId} Post: {self.post}\nProgramming Language: {self.programming_language}")
+
+# devloper = Developer("Abu Hurera",23,"Male",5321,"Java Developer","Java")
+# devloper.show_detail()
+
+
