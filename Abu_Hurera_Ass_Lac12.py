@@ -59,4 +59,22 @@
 # bird.eat()
 # bird.fly()
 
-Qno4
+# Qno4
+# class Swimmer:
+#    def swim(self):
+#       print("I can Swim in water")
+# class Walker:
+#    def walk(self):
+#       print("I Walk daily in the morning")
+
+# class Amphibian(Swimmer,Walker):
+#    def detail(self):
+#       print("I am an Ambhibian..")
+#       self.swim()
+#       self.walk()
+# ambhibian = Amphibian()
+
+# ambhibian.detail()
+
+
+# Qno5
