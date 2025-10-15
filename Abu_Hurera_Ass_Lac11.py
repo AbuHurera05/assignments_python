@@ -39,7 +39,8 @@
 
 # Qno4
 # class Account:
-#    _balance=1000
+#    def __init__(self,balance):
+#       self._balance = balance
 #    @property
 #    def get_balance(self):
 #       return self._balance
@@ -47,9 +48,24 @@
 #    def set_balacne(self,balance):
 #       self._balance = balance
 
-# acc = Account()
+# acc = Account(2000)
 # print(acc.get_balance)
 # acc.set_balacne=10000
 # print(acc.get_balance)
 
 # Qno5
+# class Book:
+#    def __init__(self,title,author,price):
+#       self.title = title
+#       self.author = author
+#       self.price = price
+   
+#    def show_detail(self):
+#       print(f"The {self.title} is written by: {self.author} cost: {self.price}Rs")
+
+# book1 = Book("Java","James Goslin",2000)
+# book2 = Book("Python","Guido Van Rossum",1030)
+# book3 = Book("C++","Bjarne Stroustrup",800)
+# book1.show_detail()
+# book2.show_detail()
+# book3.show_detail()
