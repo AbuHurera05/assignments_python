@@ -78,3 +78,21 @@
 
 
 # Qno5
+class Shape:
+   def area(self):
+     pass
+
+class Circle(Shape):
+   def __init__(self,radius):
+      self.radius = radius
+   def area(self):
+      print(f"Area of Circle: {3.14 * self.radius**2}")
+class Rectagle(Shape):
+   def __init__(self,width,height):
+      self.width = width
+      self.height = height
+
+   def area(self):
+      print(f"Area of Ractangle: {self.width*self.height}")
+
+def calculates
