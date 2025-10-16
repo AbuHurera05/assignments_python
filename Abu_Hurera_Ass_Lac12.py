@@ -78,26 +78,38 @@
 
 
 # Qno5
-class Shape:
-   def area(self):
-     pass
+class Animal:
+   def sound(self):
+      print("Animals make sound")
 
-class Circle(Shape):
-   def __init__(self,radius):
-      self.radius = radius
-   def area(self):
-      print(f"Area of Circle: {3.14 * self.radius**2}")
-class Rectagle(Shape):
-   def __init__(self,width,height):
-      self.width = width
-      self.height = height
+class Dog(Animal):
+   def sound(self):
+      super().sound()
+      print("Dog bark: Woof Woof!")
 
-   def area(self):
-      print(f"Area of Ractangle: {self.width*self.height}")
+dog = Dog()
+dog.sound()
+# Qno6
+# class Shape:
+#    def area(self):
+#      pass
 
-reactangle = Rectagle(4,6)
-reactangle.area()
+# class Circle(Shape):
+#    def __init__(self,radius):
+#       self.radius = radius
+#    def area(self):
+#       print(f"Area of Circle: {3.14 * self.radius**2}")
+# class Rectagle(Shape):
+#    def __init__(self,width,height):
+#       self.width = width
+#       self.height = height
 
-circle = Circle(4)
-circle.area()
+#    def area(self):
+#       print(f"Area of Ractangle: {self.width*self.height}")
+
+# reactangle = Rectagle(4,6)
+# reactangle.area()
+
+# circle = Circle(4)
+# circle.area()
 
