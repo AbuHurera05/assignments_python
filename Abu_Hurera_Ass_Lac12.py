@@ -78,17 +78,17 @@
 
 
 # Qno5
-class Animal:
-   def sound(self):
-      print("Animals make sound")
+# class Animal:
+#    def sound(self):
+#       print("Animals make sound")
 
-class Dog(Animal):
-   def sound(self):
-      super().sound()
-      print("Dog bark: Woof Woof!")
+# class Dog(Animal):
+#    def sound(self):
+#       super().sound()
+#       print("Dog bark: Woof Woof!")
 
-dog = Dog()
-dog.sound()
+# dog = Dog()
+# dog.sound()
 # Qno6
 # class Shape:
 #    def area(self):
