@@ -95,4 +95,9 @@ class Rectagle(Shape):
    def area(self):
       print(f"Area of Ractangle: {self.width*self.height}")
 
-def calculates
+reactangle = Rectagle(4,6)
+reactangle.area()
+
+circle = Circle(4)
+circle.area()
+
