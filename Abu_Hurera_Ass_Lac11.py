@@ -1,4 +1,4 @@
-# Qno1
+# Qno1l
 # class Employess:
 #    def __init__(self,name,salary):
 #       self.name = name
