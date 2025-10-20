@@ -1,5 +1,0 @@
-Name: Abu Hurera
-Age: 23
-City: Tando Bago
-Department: CS
-Institute: Laar Campus Badin

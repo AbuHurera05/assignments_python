@@ -42,7 +42,7 @@ try:
          rows = csv.DictReader(fileRead)
          for row in rows:
             if row['Age'] > str(25):
-               csv.DictWriter(fileWrite)
+               csv.DictWriter(row)
                print(row)
 except FileNotFoundError:
    print("File Not Found")
