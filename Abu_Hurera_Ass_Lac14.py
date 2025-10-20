@@ -35,9 +35,14 @@
 # Qno3
 import csv
 FILE_PATH = "data.csv"
+FILE_PATH1 = 'data1.csv'
 try:
-   with open(FILE_PATH,'r') as fileRead:
-      row = csv.DictReader(fileRead)
-      print(row)
+   with open(FILE_PATH,'w') as fileWrite:
+      with open(FILE_PATH1,'r') as fileRead:
+         rows = csv.DictReader(fileRead)
+         for row in rows:
+            if row['Age'] > str(25):
+               csv.DictWriter(fileWrite)
+               print(row)
 except FileNotFoundError:
    print("File Not Found")
