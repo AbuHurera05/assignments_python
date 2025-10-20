@@ -1,5 +1,5 @@
-I am abu Hurera
-Address: Village Haji Talib Junejo
-District: Badin
-Age:23
+Name: Abu Hurera
+Age: 23
+City: Tando Bago
 Department: CS
+Institute: Laar Campus Badin
