@@ -37,12 +37,14 @@ import csv
 FILE_PATH = "data.csv"
 FILE_PATH1 = 'data1.csv'
 try:
-   with open(FILE_PATH,'w') as fileWrite:
-      with open(FILE_PATH1,'r') as fileRead:
+   with open(FILE_PATH,'r') as fileRead:
+      with open(FILE_PATH1,'w') as fileWrite:
          rows = csv.DictReader(fileRead)
          for row in rows:
             if row['Age'] > str(25):
-               csv.DictWriter(row)
+               file=csv.DictWriter(fileWrite,fieldnames=['Name','Age','Department'])
+               # file.writeheader()
+               file.writerow(row)
                print(row)
 except FileNotFoundError:
    print("File Not Found")
