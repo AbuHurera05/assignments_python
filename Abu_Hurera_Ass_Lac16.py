@@ -43,7 +43,7 @@ city_coords = {
     "badin": {"lat": 24.6557, "lon": 68.8372},
     "matli": {"lat": 24.0444, "lon": 68.6589},
     "talhar": {"lat": 24.84150, "lon": 68.83840},
-    "golarchi": {"lat": 24.6532363, "lon": 68.83840}
+    "golarchi": {"lat": 24.6532363, "lon": 68.533658}
 }
 
 if city.lower() in city_coords:
