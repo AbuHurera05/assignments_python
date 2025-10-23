@@ -64,4 +64,4 @@ if city.lower() in city_coords:
     else:
         print("Failed to fetch weather data.")
 else:
-    print("City not found in the list. Try Karachi, Lahore, Islamabad, or Tanod Bago.")
+    print("City not found in the list. Try Karachi, Lahore, Islamabad, Tanod Bago,Badin, Golarchi, Talhar, Matli.")
