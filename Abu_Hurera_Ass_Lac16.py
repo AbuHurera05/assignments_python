@@ -41,7 +41,7 @@ city_coords = {
     "islamabad": {"lat": 33.6844, "lon": 73.0479},
     "tandobago": {"lat": 24.7887164, "lon": 68.9655333},
     "badin": {"lat": 24.6557, "lon": 68.8372},
-    "matli": {"lat": 24.0444, "lon": 68.6589},
+    "matli": {"lat": 25.046026, "lon": 68.656738},
     "talhar": {"lat": 24.84150, "lon": 68.83840},
     "golarchi": {"lat": 24.6532363, "lon": 68.533658}
 }
