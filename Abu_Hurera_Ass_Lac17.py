@@ -49,18 +49,21 @@ from datetime import datetime
 #     print(f"Your age in days: {age_days}")
 
 # Qno5
-from datetime import datetime
+# from datetime import datetime
 
-t1 = input("Enter first time (HH:MM:SS): ")
-t2 = input("Enter second time (HH:MM:SS): ")
+# t1 = input("Enter first time (HH:MM:SS): ")
+# t2 = input("Enter second time (HH:MM:SS): ")
 
-fmt = "%H:%M:%S"
-time1 = datetime.strptime(t1, fmt)
-time2 = datetime.strptime(t2, fmt)
+# fmt = "%H:%M:%S"
+# time1 = datetime.strptime(t1, fmt)
+# time2 = datetime.strptime(t2, fmt)
 
-diff = abs(time2 - time1)
-hours = diff.seconds // 3600
-minutes = (diff.seconds % 3600) // 60
+# diff = abs(time2 - time1)
+# hours = diff.seconds // 3600
+# minutes = (diff.seconds % 3600) // 60
 
-print(f"Time difference: {hours} hours and {minutes} minutes")
+# print(f"Time difference: {hours} hours and {minutes} minutes")
+
+# Qno6
+
 
