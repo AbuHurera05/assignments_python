@@ -37,7 +37,6 @@ from datetime import *
 # print(f"{day}{suffix} {month}, {year}")
 
 # Qno4
-from datetime import datetime
 # dob_input = input("Enter your date of birth (YYYY-MM-DD): ")
 # dob = datetime.strptime(dob_input, "%Y-%m-%d")
 # today = datetime.now()
@@ -49,8 +48,6 @@ from datetime import datetime
 #     print(f"Your age in days: {age_days}")
 
 # Qno5
-# from datetime import datetime
-
 # t1 = input("Enter first time (HH:MM:SS): ")
 # t2 = input("Enter second time (HH:MM:SS): ")
 
@@ -65,14 +62,14 @@ from datetime import datetime
 # print(f"Time difference: {hours} hours and {minutes} minutes")
 
 # Qno6
-from datetime import datetime
-dob = datetime.strptime(input("Enter your DOB (YYYY-MM-DD): "), "%Y-%m-%d")
-target_date = datetime.strptime(input("Enter the date you want to check age on (YYYY-MM-DD): "), "%Y-%m-%d")
+# dob = datetime.strptime(input("Enter your DOB (YYYY-MM-DD): "), "%Y-%m-%d")
+# target_date = datetime.strptime(input("Enter the date you want to check age on (YYYY-MM-DD): "), "%Y-%m-%d")
 
-if target_date < dob:
-    print("Invalid: Target date is before your birth.")
-else:
-    age_years = target_date.year - dob.year - ((target_date.month, target_date.day) < (dob.month, dob.day))
-    print(f"Your age on {target_date.strftime('%d %B %Y')} will be {age_years} years.")
+# if target_date < dob:
+#     print("Invalid: Target date is before your birth.")
+# else:
+#     age_years = target_date.year - dob.year - ((target_date.month, target_date.day) < (dob.month, dob.day))
+#     print(f"Your age on {target_date.strftime('%d %B %Y')} will be {age_years} years.")
 
+# QNo7
 
