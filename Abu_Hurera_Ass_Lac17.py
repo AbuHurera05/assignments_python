@@ -19,5 +19,21 @@ from datetime import *
 # print(f"Time left for the event: {days} days, {hours} hours, {minutes} minutes")
 
 # Qno3
+from datetime import datetime
+
+date_input = input("Enter a date (YYYY-MM-DD): ")
+date_obj = datetime.strptime(date_input, "%Y-%m-%d")
+
+day = date_obj.day
+month = date_obj.strftime("%B")
+year = date_obj.year
+
+# Add suffix to day (st, nd, rd, th)
+if 4 <= day <= 20 or 24 <= day <= 30:
+    suffix = "th"
+else:
+    suffix = ["st", "nd", "rd"][day % 10 - 1]
+
+print(f"{day}{suffix} {month}, {year}")
 
 
