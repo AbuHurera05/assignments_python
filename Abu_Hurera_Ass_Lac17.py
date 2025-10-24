@@ -65,5 +65,14 @@ from datetime import datetime
 # print(f"Time difference: {hours} hours and {minutes} minutes")
 
 # Qno6
+from datetime import datetime
+dob = datetime.strptime(input("Enter your DOB (YYYY-MM-DD): "), "%Y-%m-%d")
+target_date = datetime.strptime(input("Enter the date you want to check age on (YYYY-MM-DD): "), "%Y-%m-%d")
+
+if target_date < dob:
+    print("Invalid: Target date is before your birth.")
+else:
+    age_years = target_date.year - dob.year - ((target_date.month, target_date.day) < (dob.month, dob.day))
+    print(f"Your age on {target_date.strftime('%d %B %Y')} will be {age_years} years.")
 
 
