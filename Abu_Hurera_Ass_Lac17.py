@@ -38,12 +38,15 @@ from datetime import *
 
 # Qno4
 from datetime import datetime
-dob_input = input("Enter your date of birth (YYYY-MM-DD): ")
-dob = datetime.strptime(dob_input, "%Y-%m-%d")
-today = datetime.now()
+# dob_input = input("Enter your date of birth (YYYY-MM-DD): ")
+# dob = datetime.strptime(dob_input, "%Y-%m-%d")
+# today = datetime.now()
 
-if dob > today:
-    print("Error: Future date entered! Please enter a valid date of birth.")
-else:
-    age_days = (today - dob).days
-    print(f"Your age in days: {age_days}")
+# if dob > today:
+#     print("Error: Future date entered! Please enter a valid date of birth.")
+# else:
+#     age_days = (today - dob).days
+#     print(f"Your age in days: {age_days}")
+
+# Qno5
+
