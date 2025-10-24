@@ -61,7 +61,22 @@ from datetime import *
 
 # print(f"Time difference: {hours} hours and {minutes} minutes")
 
-# Qno6
+# QNo6
+from datetime import datetime
+import pytz
+
+pak_tz = pytz.timezone("Asia/Karachi")
+usa_tz = pytz.timezone("America/New_York")
+
+pak_time = datetime.now(pak_tz)
+usa_time = datetime.now(usa_tz)
+
+print("Pakistan Time:", pak_time.strftime("%Y-%m-%d %H:%M:%S"))
+print("USA Time:", usa_time.strftime("%Y-%m-%d %H:%M:%S"))
+
+
+
+# Qno7
 # dob = datetime.strptime(input("Enter your DOB (YYYY-MM-DD): "), "%Y-%m-%d")
 # target_date = datetime.strptime(input("Enter the date you want to check age on (YYYY-MM-DD): "), "%Y-%m-%d")
 
