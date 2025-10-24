@@ -62,19 +62,17 @@ from datetime import *
 # print(f"Time difference: {hours} hours and {minutes} minutes")
 
 # QNo6
-from datetime import datetime
-import pytz
+# from datetime import datetime
+# import pytz
 
-pak_tz = pytz.timezone("Asia/Karachi")
-usa_tz = pytz.timezone("America/New_York")
+# pak_tz = pytz.timezone("Asia/Karachi")
+# usa_tz = pytz.timezone("America/New_York")
 
-pak_time = datetime.now(pak_tz)
-usa_time = datetime.now(usa_tz)
+# pak_time = datetime.now(pak_tz)
+# usa_time = datetime.now(usa_tz)
 
-print("Pakistan Time:", pak_time.strftime("%Y-%m-%d %H:%M:%S"))
-print("USA Time:", usa_time.strftime("%Y-%m-%d %H:%M:%S"))
-
-
+# print("Pakistan Time:", pak_time.strftime("%Y-%m-%d %H:%M:%S"))
+# print("USA Time:", usa_time.strftime("%Y-%m-%d %H:%M:%S"))
 
 # Qno7
 # dob = datetime.strptime(input("Enter your DOB (YYYY-MM-DD): "), "%Y-%m-%d")
@@ -86,5 +84,31 @@ print("USA Time:", usa_time.strftime("%Y-%m-%d %H:%M:%S"))
 #     age_years = target_date.year - dob.year - ((target_date.month, target_date.day) < (dob.month, dob.day))
 #     print(f"Your age on {target_date.strftime('%d %B %Y')} will be {age_years} years.")
 
-# QNo7
+# QNo8
+from datetime import datetime
+
+birthdays = {}
+n = int(input("How many birthdays do you want to add? "))
+
+for _ in range(n):
+    name = input("Enter name: ")
+    date = input("Enter birth date (YYYY-MM-DD): ")
+    birthdays[name] = datetime.strptime(date, "%Y-%m-%d")
+
+today = datetime.now()
+upcoming = None
+upcoming_name = None
+
+for name, bday in birthdays.items():
+    next_bday = bday.replace(year=today.year)
+    if next_bday < today:
+        next_bday = next_bday.replace(year=today.year + 1)
+    days_left = (next_bday - today).days
+
+    if not upcoming or days_left < upcoming:
+        upcoming = days_left
+        upcoming_name = name
+
+print(f"The next birthday is {upcoming_name}'s in {upcoming} days!")
+
 
