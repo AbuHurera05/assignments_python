@@ -1,4 +1,5 @@
 from datetime import *
+import pytz
 # Qno1
 # dob_str = input("Enter your date of birth (YYYY-MM-DD):")
 # dob = datetime.strptime(dob_str,"%Y-%m-%d").date()
@@ -62,9 +63,6 @@ from datetime import *
 # print(f"Time difference: {hours} hours and {minutes} minutes")
 
 # QNo6
-# from datetime import datetime
-# import pytz
-
 # pak_tz = pytz.timezone("Asia/Karachi")
 # usa_tz = pytz.timezone("America/New_York")
 
@@ -85,30 +83,28 @@ from datetime import *
 #     print(f"Your age on {target_date.strftime('%d %B %Y')} will be {age_years} years.")
 
 # QNo8
-from datetime import datetime
+# birthdays = {}
+# n = int(input("How many birthdays do you want to add? "))
 
-birthdays = {}
-n = int(input("How many birthdays do you want to add? "))
+# for _ in range(n):
+#     name = input("Enter name: ")
+#     date = input("Enter birth date (YYYY-MM-DD): ")
+#     birthdays[name] = datetime.strptime(date, "%Y-%m-%d")
 
-for _ in range(n):
-    name = input("Enter name: ")
-    date = input("Enter birth date (YYYY-MM-DD): ")
-    birthdays[name] = datetime.strptime(date, "%Y-%m-%d")
+# today = datetime.now()
+# upcoming = None
+# upcoming_name = None
 
-today = datetime.now()
-upcoming = None
-upcoming_name = None
+# for name, bday in birthdays.items():
+#     next_bday = bday.replace(year=today.year)
+#     if next_bday < today:
+#         next_bday = next_bday.replace(year=today.year + 1)
+#     days_left = (next_bday - today).days
 
-for name, bday in birthdays.items():
-    next_bday = bday.replace(year=today.year)
-    if next_bday < today:
-        next_bday = next_bday.replace(year=today.year + 1)
-    days_left = (next_bday - today).days
+#     if not upcoming or days_left < upcoming:
+#         upcoming = days_left
+#         upcoming_name = name
 
-    if not upcoming or days_left < upcoming:
-        upcoming = days_left
-        upcoming_name = name
-
-print(f"The next birthday is {upcoming_name}'s in {upcoming} days!")
+# print(f"The next birthday is {upcoming_name}'s in {upcoming} days!")
 
 
