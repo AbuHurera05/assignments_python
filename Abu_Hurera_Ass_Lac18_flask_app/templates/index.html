@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello {{ name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, {{ name }}! 👋</h1>
+        <p>Welcome to our Flask web app!</p>
+        <a href="/welcome">Go to Welcome Page</a>
+    </div>
+</body>
+</html>
