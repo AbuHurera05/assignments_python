@@ -11,7 +11,7 @@ def hello_user(username):
 # Route 2: /welcome
 @app.route('/welcome')
 def welcome():
-    return "<h2>Welcome to the Flask App! 🎉</h2>"
+    return "<h2>Welcome to the Flask App!</h2>"
 
 # Route 3: /square/<int:number>
 @app.route('/square/<int:number>')
