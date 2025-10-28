@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Route 1: /hello/<username>
 @app.route('/hello/<username>')
 def hello_user(username):
-    return render_template('hello.html', name=username)
+    return render_template('index.html', name=username)
 
 # Route 2: /welcome
 @app.route('/welcome')
